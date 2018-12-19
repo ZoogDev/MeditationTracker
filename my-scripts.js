@@ -1,25 +1,26 @@
 //set count
-if(localStorage.getItem("count") == null) {
-	localStorage.setItem("count", 0)
+if(localStorage.getItem("count") == null )  {
+localStorage.setItem ("count", 0)
 }
 
-//update count
+// update count
 function update() {
-	document.getElementById("count").innerHTML = localStorage.getItem("count");
+	document.getElementById ("count").innerHTML = localStorage.getItem("count")
 }
 
-update();
+update()
 
-//add one to count
+//add 1 to count
 function plusOne() {
-	localStorage.setItem("count", (Number(localStorage.getItem("count")) + 1));
-	update();
+	localStorage.setItem ("count", Number ( localStorage.getItem ("count")) + 1 )
+	update()
 }
 
-//reset count
+//Rest
 function reset() {
-	if (confirm("Are you sure you want to reset?")) {
-    	localStorage.setItem("count",0);
-		update();
+	if(confirm("Did you really mediatate?")){
+		localStorage.setItem ("count", 0)
+		update()
+
 	}
 }
